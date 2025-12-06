@@ -1,0 +1,17 @@
+[project]
+name = "console-todo"
+version = "0.1.0"
+description = "A console-based todo application for the Todo Evolution Project"
+authors = [{name = "Todo Evolution Project", email = "todo@example.com"}]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pytest>=7.0.0",
+]
+
+[project.scripts]
+console-todo = "src.console_todo.main:main"
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
